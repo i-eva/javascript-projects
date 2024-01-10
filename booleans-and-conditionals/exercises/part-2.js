@@ -39,3 +39,23 @@ if (shuttleSpeed > 175000) {
 // 4) PREDICT: Do the code blocks shown in the 'predict.txt' file produce the same result?
 
 console.log("Yes");
+
+// 4) checking accuracy of prediction: code block 1
+
+if (crewStatus && computerStatusCode === 200 && spaceSuitsOn) {
+    console.log("all systems go");
+ } else {
+    console.log("WARNING. Not ready");
+ }
+
+ // 4) checking accuracy of prediction: code block 2
+
+ if (!crewStatus || computerStatusCode !== 200 || !spaceSuitsOn) {
+    console.log("WARNING. Not ready");
+ } else {
+    console.log("all systems go");
+ }
+
+ // 4) run and debug showed that both code blocks returned "all systems are go"
+
+ console.log("Vindicated! Prediction was accurate")
