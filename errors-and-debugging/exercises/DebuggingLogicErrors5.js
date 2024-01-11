@@ -4,7 +4,7 @@
 // Refactor the code to do this. Verify that your change works by updating the console.log statements.
 
 let launchReady = false;
-let fuelLevel = 17000;
+let fuelLevel = 21000;
 let fuelCheck = false
 let crewStatus = true;
 let computerStatus = 'green';
@@ -30,3 +30,13 @@ if (crewStatus && computerStatus === 'green' && fuelCheck){
 }
 
 console.log("launchReady = ", launchReady);
+
+//Almost done, so wipe the sweat off your brow! 
+//Add a final if/else block to print a countdown and “Liftoff!” if all the checks pass, 
+//or print “Launch scrubbed” if any check fails.
+
+if (launchReady) {
+   console.log("10, 9, 8, 7, 6, 5, 4, 3, 2, 1...Liftoff!");
+} else {
+   console.log("Launch scrubbed!");
+}
