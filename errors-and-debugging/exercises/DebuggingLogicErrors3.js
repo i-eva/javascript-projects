@@ -2,7 +2,8 @@
 // Now consider the second if/else block. 
 // Add another console.log(launchReady) after this block and run the program.
 
-// Given the values for crewStatus and computerStatus, should launchReady be true or false after the check?  
+// Given the values for crewStatus and computerStatus, 
+//should launchReady be true or false after the check?  
 // Is the program behaving as expected?
 
 let launchReady = false;
@@ -25,6 +26,8 @@ if (crewStatus && computerStatus === 'green'){
    console.log('WARNING: Crew or computer not ready!');
    launchReady = false;
 }
+
+console.log(launchReady)
 
 // if (launchReady) {
 //    console.log('10, 9, 8, 7, 6, 5, 4, 3, 2, 1...');
