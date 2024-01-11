@@ -2,7 +2,12 @@
 // Run the code and examine the output. 
 
 // Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
+
+//Given all three values, launchReady should evaluate to false (insufficient fuel)
+
 // Is the program behaving as expected?
+
+//No, the program should not allow a launch with insufficient fuel
 
 let launchReady = false;
 let fuelLevel = 17000;
