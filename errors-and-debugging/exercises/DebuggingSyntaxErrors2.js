@@ -30,3 +30,5 @@ if (launchReady) {
 } else {
    console.log("Launch scrubbed.");
 }
+
+//Two syntax errors found and corrected. Ran code successfully.
