@@ -2,8 +2,10 @@
 // Consider the first if/else block below. 
 // Add console.log(launchReady) after this block, then run the program.
 
-//Given the fuelLevel value, should launchReady be true or false after the check?  
+//Given the fuelLevel value, should launchReady be true or false after the check? 
+// my answer: false 
 //Is the program behaving as expected?
+// yes, console.log prints false
 
 let launchReady = false;
 let fuelLevel = 17000;
