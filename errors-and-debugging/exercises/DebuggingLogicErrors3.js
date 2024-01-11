@@ -4,7 +4,14 @@
 
 // Given the values for crewStatus and computerStatus, 
 //should launchReady be true or false after the check?  
+
+//launchReady should be true given these values
+
 // Is the program behaving as expected?
+
+// No, the intention is not to launch if the fuel level is insufficient
+// Even if both the crew AND the computer statuses are favorable
+// Suggest (crewStatus && computerStatus === 'green' && fuelLevel >= 20000)
 
 let launchReady = false;
 // let fuelLevel = 17000;
