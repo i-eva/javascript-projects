@@ -42,5 +42,15 @@ console.log(`Using the replace method eliminated the need
 to use if/else statements in my code to handle either a whole
 or a decimal number as user input.`)
 
+//Since I thought outside the box a bit on that one
+//Here is the solution LaunchCode provided
+//This solution uses "includes" which is a brand-new method to me
 
-
+console.log(`Beginning with an unknown number, ${decimal},
+use an else/if statement and the includes method to count the 
+number of digits, not characters:`);
+if (String(decimal).includes('.')){
+    console.log(`\t ${String(decimal).length-1} digits long`);
+    } else {
+    console.log(`\t ${String(decimal).length} digits long`);
+    }
