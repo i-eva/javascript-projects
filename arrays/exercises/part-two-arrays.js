@@ -33,3 +33,6 @@ cargoHold.unshift(1138);
 console.log(cargoHold);
 
 //5) Use a template literal to print the final array and its length.
+
+console.log(`The length of the final array is: ${cargoHold.length}
+The final array is: ${cargoHold}`);
