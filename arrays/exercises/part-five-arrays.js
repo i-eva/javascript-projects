@@ -36,3 +36,15 @@ console.log(`The original array: ${arr}
 //4) We can take a comma-separated string and convert it into a modifiable array. 
 //Try it! Alphabetize the cargoHold string, and then combine the contents into a new string.
 let cargoHold = "water,space suits,food,plasma sword,batteries";
+
+//Used console.log to check conversion and alpabetization
+
+//console.log(cargoHold.split(",").sort());
+
+let cargoHoldUpdate = cargoHold.split(",").sort().join(",");
+
+console.log(cargoHoldUpdate);
+
+//ta DA!
+
+
