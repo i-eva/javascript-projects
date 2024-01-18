@@ -1,11 +1,57 @@
-//Arrays can hold different data types, even other arrays! A multi-dimensional array is one with entries that are themselves arrays.
+//Arrays can hold different data types, even other arrays! 
+//A multi-dimensional array is one with entries that are themselves arrays.
 
-//1) Define and initialize the arrays specified in the exercise to hold the name, chemical symbol and mass for different elements.
+//1) Define and initialize the arrays specified in the exercise to hold the name, 
+// chemical symbol and mass for different elements.
 
-//2) Define the array 'table', and use 'push' to add each of the element arrays to it. Print 'table' to see its structure.
+let element1 = ['hydrogen', 'H', 1.008];
+let element2 = ['helium', 'He', 4.003];
+let element26 = ['iron', 'Fe', 55.85];
 
-//3) Use bracket notation to examine the difference between printing 'table' with one index vs. two indices (table[][]).
+//2) Define the array 'table', and use 'push' to add each of the element arrays to it. 
+//Print 'table' to see its structure.
 
-//4) Using bracket notation and the table array, print the mass of element1, the name for element 2 and the symbol for element26.
+let table = [];
+table.push(element1, element2, element26);
+console.log(table);
 
-//5) 'table' is an example of a 2-dimensional array. The first “level” contains the element arrays, and the second level holds the name/symbol/mass values. Experiment! Create a 3-dimensional array and print out one entry from each level in the array.
+//3) Use bracket notation to examine the difference between printing 'table' 
+//with one index vs. two indices (table[][]).
+
+console.log(table[0]);
+console.log(table[0][2]);
+
+//4) Using bracket notation and the table array, print the mass of element1, 
+//the name for element 2 and the symbol for element26.
+
+console.log(`The mass of element1 is ${table[0][2]}`);
+console.log(`The name of element2 is ${table[1][0]}`);
+console.log(`The symbol for element26 is ${table[2][1]}
+`);
+
+//5) 'table' is an example of a 2-dimensional array. 
+//The first “level” contains the element arrays, and the second level 
+//holds the name/symbol/mass values. Experiment! Create a 3-dimensional array 
+//and print out one entry from each level in the array.
+
+let inertGases = [];
+inertGases.push(element1,element2);
+
+let metals =[];
+metals.push(element26);
+
+let matrix = [];
+matrix.push(inertGases, metals);
+
+//The first bracketed number refers to the matrix, inertGases (0) or metals (1) "layer"
+//The second bracketed number refers to the atomic elements, hydrogen (0,0), helium (0,1), or iron (1,0)
+//The third bracketed number refers to the individual element, hydrogen (0,0,0), H (0,0,1), or mass (0,0,2)
+
+console.log(`The inert gases array contains information 
+about two atomic elements: ${matrix[0]}
+`);
+console.log(`The name, suymbol, and mass of helium is: ${matrix[0][1]}
+`);
+console.log(`The mass of helium is: ${matrix[0][1][2]}
+`);
+
