@@ -6,3 +6,12 @@ for (let i = 0; i < str.length; i++) {
 }
 
 console.log(reversed);
+
+let strTwo = "redrum";
+let reversedTwo = "";
+
+for (let i = 0; i < strTwo.length; i++) {
+    reversedTwo = reversedTwo + strTwo[i];
+}
+
+console.log(reversedTwo);
