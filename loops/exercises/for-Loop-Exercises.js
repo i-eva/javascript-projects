@@ -35,11 +35,20 @@ prints the numbers 50 - 20 in descending order,
 but only if the numbers are multiples of 3. 
 My code should work even if I replace 50 or 20 with other numbers.`);
 
-for (let i = 50; i%3 === 0 ; i = i--) {
+//This code will not work...
+//for (let i = 50; i%3 === 0 ; i = i--) {
+//  console.log(i)
+//  if (i < 20) {
+    //break;
+//  }
+//}
+//...because the loop condition condition will halt the loop
+//when it evaluates to false (not an if/else condition)
+
+for (let i = 50; i < 20 ; i = i--) {
+  if (i%3 === 0) {
   console.log(i)
-  if (i < 20) {
-    break;
-  }
+   }
 }
 
 console.log(`...
