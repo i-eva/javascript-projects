@@ -55,16 +55,31 @@ console.log(`...
 My code attempts don't work... YET`);
 
 /*Exercise #2: 
-Initialize two variables to hold the string “LaunchCode” and the array [1, 5, ‘LC101’, ‘blue’, 42].
+Initialize two variables to hold the string “LaunchCode” and the array [1, 5, ‘LC101’, ‘blue’, 42].*/
+console.log(`Exercise #2:
+Initialize two variables to hold the string “LaunchCode” 
+and the array [1, 5, ‘LC101’, ‘blue’, 42].`);
 
+let str = "LaunchCode";
+let arr = [1, 5, 'LC101', 'blue', 42];
 
-Construct ``for`` loops to accomplish the following tasks:
+/*Construct ``for`` loops to accomplish the following tasks:
   a. Print each element of the array to a new line.
   b. Print each character of the string - in reverse order - to a new line. */ 
 
+console.log(`Exercise #2a: print each element of the array
+[1, 5, ‘LC101’, ‘blue’, 42] to a new line.`);
 
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i])
+}
 
+console.log(`Exercise #2b: print each character of the string
+"LaunchCode" - in reverse order - to a new line.`);
 
+for (let i = str.length; i > -1; i--) {
+  console.log(str[i])
+}
 
 /*Exercise #3:Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
   a. One array contains the even numbers, and the other holds the odds.
