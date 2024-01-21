@@ -108,6 +108,6 @@ console.log(`Exercise #3b:
 Print the arrays to confirm the results.
 `)
 
-console.log(` oddArray contains: ${oddArray}
+console.log(` evenArray contains: ${evenArray}
 
-evenArray contains: ${evenArray}`);
+  oddArray contains: ${oddArray}`);
