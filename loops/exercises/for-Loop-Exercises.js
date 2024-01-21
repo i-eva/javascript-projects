@@ -45,14 +45,15 @@ My code should work even if I replace 50 or 20 with other numbers.`);
 //...because the loop condition condition will halt the loop
 //when it evaluates to false (not an if/else condition)
 
-for (let i = 50; i < 20 ; i = i--) {
+for (let i = 50; i > 20 ; i--) {
   if (i%3 === 0) {
-  console.log(i)
+  console.log(i);
    }
 }
 
 console.log(`...
-My code attempts don't work... YET`);
+My code attempts don't work... when I write i = i--. 
+I can write i = i-1 or i-- instead to get working code.`);
 
 /*Exercise #2: 
 Initialize two variables to hold the string “LaunchCode” and the array [1, 5, ‘LC101’, ‘blue’, 42].*/
@@ -81,6 +82,32 @@ for (let i = str.length; i > -1; i--) {
   console.log(str[i])
 }
 
-/*Exercise #3:Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
+/*Exercise #3:Construct a for loop that sorts the array 
+//[2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
   a. One array contains the even numbers, and the other holds the odds.
   b. Print the arrays to confirm the results. */
+console.log(`Exercise #3a: 
+Construct a for loop that sorts the array 
+[2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
+One array contains the even numbers, and the other holds the odds.
+`)
+  let oddArray = [];
+  let evenArray = [];
+  let fullArray = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104];
+
+  for (let i = 0; i < fullArray.length; i++) {
+    if (fullArray[i]%2 === 0) {
+      evenArray.push(fullArray[i]); 
+    } else {
+      oddArray.push(fullArray[i]);
+       }
+      }
+    
+
+console.log(`Exercise #3b: 
+Print the arrays to confirm the results.
+`)
+
+console.log(` oddArray contains: ${oddArray}
+
+evenArray contains: ${evenArray}`);
