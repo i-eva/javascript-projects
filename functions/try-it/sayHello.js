@@ -46,3 +46,15 @@ console.log(ret);
 
 // I get both NaN and undefined
 
+// Question: what does the following code output?
+// Answer: my guess is "false"
+
+let num = 42;
+
+function isEven (num) { 
+    return num % 2 === 0; 
+}
+
+console.log(isEven(43));
+
+// I was correct! How about that
