@@ -25,3 +25,24 @@ console.log(a);
 //Answer: My guess is a in this for loop reaches 8
 //Alas I began with the value 2 instead of 4. The correct answer is 10.
 // a should become 4 after round 0, then 6, then 8 on round 2, not three
+
+// Question: what does the following function return?
+// Answer: undefined (because the function is not returned)
+// Answer: once I added a return (line 42)
+
+// Question: what does function repeater output?
+// Answer: BobBob
+
+function repeater(str) {
+   let repeated = str + str;
+   console.log(repeated);
+ 
+}
+
+repeater('Bob');
+
+let ret = repeater();
+console.log(ret);
+
+// I get both NaN and undefined
+
