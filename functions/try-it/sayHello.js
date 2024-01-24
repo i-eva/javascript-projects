@@ -58,3 +58,18 @@ function isEven (num) {
 console.log(isEven(43));
 
 // I was correct! How about that
+
+// What is the output of the following code?
+
+let message = "Hello, World!";
+
+function printMessage() {
+    console.log(message);
+}
+
+printMessage();
+message = "Goodbye";
+printMessage();
+
+// The output is whatever is last defined, so in this case,
+// we get both Hello, World! and Goodbye
