@@ -20,11 +20,39 @@ function makeDownwardStairs(height) {
     return stairs;
 }
 
-
-console.log(makeDownwardStairs(5));
+console.log(`The function makeDownwardStairs(5) produces
+${makeDownwardStairs(5)}
+`);
 
 // #
 // ##
 // ###
 // ####
 // #####
+
+// makeSpaceLine(numSpaces, numChars) function
+// Write a function makeSpaceLine(numSpaces, numChars) that returns 
+// a line with exactly the specified number of spaces (3), followed by 
+// the specified number of hashes (5), followed again by numSpaces more spaces.
+
+function makeSpace(numSpaces) {
+    let spaces = "";
+    for (let i = 0; i < numSpaces; i++ ) {
+        spaces += " ";
+    }
+    return spaces;
+}
+
+function makeSpaceLine(numSpaces,numChars) {
+    chars = makeLine(numChars);
+    spaces = makeSpace(numSpaces);
+    let spaceLine = spaces + chars + spaces;
+    return spaceLine;
+}
+
+console.log(`The function makeSpaceLine(3,5) produces
+${makeSpaceLine(3,5)}
+`);
+
+
+// ___#####___ (underscores represent spaces)
