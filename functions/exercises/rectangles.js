@@ -49,8 +49,7 @@ ${makeSquare(5)}
 //with the given width (5) and height (3). Use your makeLine function to do this.
 
 function makeRectangle(width,height) {
-    let size = width
-    width = makeLine(size);
+    width = makeLine(width);
     let rectangle = width;
     for (let i = 0; i < height-1; i++ ) {
         rectangle += "\n" + width;
@@ -66,3 +65,15 @@ ${makeRectangle(5,3)}
 // #####
 // #####
 // #####
+
+// Now, go back and rewrite makeSquare to use makeRectangle.
+
+function newMakeSquare(size) {
+    let width = size
+    let height = size
+    return makeRectangle(width,height)
+    }
+
+console.log(`The function newMakeSquare(5) produces
+${newMakeSquare(5)}
+`);
