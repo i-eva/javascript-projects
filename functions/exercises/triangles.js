@@ -54,5 +54,28 @@ console.log(`The function makeSpaceLine(3,5) produces
 ${makeSpaceLine(3,5)}
 `);
 
-
 // ___#####___ (underscores represent spaces)
+
+// Write a function makeIsoscelesTriangle(height) that returns 
+// a triangle of the given height (5).
+
+// Tip: Consider the top line of the triangle to be level 0, 
+// the next to be line 1, and so on. Then line i is a space-line 
+// with height - i - 1 spaces and 2 * i + 1 hashes.
+
+function makeIsoscelesTriangle(height) {
+    let layer = makeSpaceLine(height-1,1)
+    for (let i = 1; i < height; i++ ) {
+        layer += "\n" + makeSpaceLine((height-(i+1)),((2*i)+1));
+    }
+    return layer;
+}
+
+console.log(`The function makeIsoscelesTriangle(5) produces
+${makeIsoscelesTriangle(5)}
+`);
+//     #
+//    ###
+//   #####
+//  #######
+// #########
