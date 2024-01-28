@@ -5,3 +5,10 @@ function reverse(str) {
 }
 
 console.log(reverse("LaunchCode"));
+
+let backwards = function(str) {
+  let backwardsArray = str.split("").reverse().join("");
+  return backwardsArray;
+};
+
+console.log(backwards("LaunchCode"));
