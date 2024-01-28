@@ -12,3 +12,24 @@ let backwards = function(str) {
 };
 
 console.log(backwards("LaunchCode"));
+
+let f1 = function(str) {
+  return str + str;
+};
+
+let f2 = f1;
+
+console.log(f1("abcd"));
+console.log(f2("abcd"));
+//console.log(function("abcd")); <- failed
+
+// Complete the following code snippet so that 
+// it logs an error message if userInput is negative.
+
+let logger = function(errorMsg) {
+  console.log("ERROR: " + errorMsg);
+};
+
+if (userInput < 0) {
+  ____________("Invalid input");
+}
