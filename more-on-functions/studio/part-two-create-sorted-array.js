@@ -8,7 +8,8 @@ function findMinValue(arr){
   return min;
 }
 
-//Create a function with an array of numbers as its parameter. This function will return a new array with the numbers sorted from least to greatest value.
+//Create a function with an array of numbers as its parameter. 
+//This function will return a new array with the numbers sorted from least to greatest value.
 
 /*Within the function:
 1) Define a new, empty array to hold the final sorted numbers.
