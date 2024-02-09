@@ -11,6 +11,12 @@ describe("checkFive", function(){
         let outputEqual = checkFive(5);
         expect(outputEqual).toBe("5 is equal to 5.")
    });
+
+   test("Returns num 'is greater than 5' when user enters 5", function() {
+        let outputGreat = checkFive(7);
+        expect(outputGreat).toBe("7 is greater than 5.")
+    });
+
 });
 
 
