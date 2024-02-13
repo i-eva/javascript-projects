@@ -20,6 +20,8 @@ let tortoise = new Astronaut('Speedy', 120);
 
 console.log(tortoise.name, tortoise.age, tortoise.mass);
 
+console.log(typeof tortoise.age);
+
 // What happens if we call Astronaut and pass in MORE than 3 arguments? TRY IT!
 
 // First I restored the defaults this.age to age and this.mass to mass. 
@@ -29,3 +31,4 @@ let tortoise2 = new Astronaut('Flash', 190, 4651, "Plumber");
 console.log(tortoise2.name, tortoise2.age, tortoise2.mass, tortoise2.role);
 
 // The extra value, "Plumber," did not print. Instead the output was "undefined"
+
