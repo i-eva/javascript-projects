@@ -7,8 +7,19 @@
     </head>
     <body>
         <h1>Flight Simulator</h1>
-        <p id="statusReport">The shuttle is on the ground</p>
+        <p id="statusReport">The shuttle is on the ground... 
+        </p>
         <button id = "liftoffButton">Take off</button>
         <button id = "abortMission">Abort mission</button>
+        <script>
+            function youFly() {
+                document.getElementById("statusReport").innerHTML += "Houston, we have liftoff!";
+                console.log("Houston, we have liftoff!");
+            }
+            // Obtain a reference to the button element
+            let button = document.getElementById("liftoffButton");
+            // Set named function youRang as the click event handler
+            button.addEventListener("click", youFly);
+            </script>
     </body>
 </html>
