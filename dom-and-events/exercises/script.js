@@ -7,7 +7,10 @@ function init () {
     button.addEventListener('click', event => {
         paragraph.innerHTML = 'Houston! We have liftoff!';
      });
-    
+    missionAbort.addEventListener('mouseover', event => {
+        button.target = {
+            color: red};
+     });
 }
 
 window.addEventListener("load", init);
