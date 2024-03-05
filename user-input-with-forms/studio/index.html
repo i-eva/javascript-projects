@@ -4,7 +4,13 @@
 	<meta charset="utf-8">
 	<script>
 		// TODO: create a handler
+	function setSearchEngine() {
+		console.log("is this thing on?!");
+	}
     window.addEventListener("load", function(){
+		let form = document.getElementById("searchForm");
+		form.addEventListener("submit", setSearchEngine);
+
         // TODO: register the handler
     });
 	</script>
@@ -12,7 +18,7 @@
 
 <body>
 
-	<form id="searchForm" method = "GET">
+	<form id="searchForm">
     <!-- TODO: add form elements -->
 	<input type="text" name="q"/>
 	<input type="radio" name="engine" value="Google"/><label>Google</label><input type="radio" name="engine" value="DuckDuckGo"/><label>DuckDuckGo</label><input type="radio" name="engine" value="Bing"/><label>Bing</label><input type="radio" name="engine" value="Ask"/></label><label>Ask  <input type="submit" value="Go!">
